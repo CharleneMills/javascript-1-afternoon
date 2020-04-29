@@ -36,7 +36,7 @@ devMountainGoal = null;
 //plus the value of the name parameter.
 
 function greeting (name) {
-  return "Hello" + name;
+  return "Hello, " + name;
 }
 
 //////////////////PROBLEM 7////////////////////
@@ -44,8 +44,8 @@ function greeting (name) {
 //Write a function expression called newGreeting.
 //Give it the same functionality as the function greeting in Problem 6.
 
-let newGreeting = (name) {
-  return "Hello" + name;
+let newGreeting = function(name) {
+  return "Hello, " + name;
 }
 
 
@@ -64,10 +64,10 @@ let groceries = ["apples", "milk", "eggs", "bread"];
 //and goodBoy (a boolean).
 
 let dog = {
-  "name": "fido",
-  "color": "black",
-  "age": 7,
-  "goodBoy": true
+  name: "fido",
+  color: "black",
+  age: 7,
+  goodBoy: true
 }
 
 //...access the dog's name from the object and assign it to a
@@ -85,15 +85,15 @@ let devMountainClassPet = dog.name;
 // with NAMEPARAM being the name parameter being passed in (not literally NAMEPARAM)
 
 function nameCheck(name){
-  if name === "Steven"{
+  if (name === "Steven"){
     return "What is up Steven?";
   }
 
-  if name === "Bryan"{
+  if (name === "Bryan"){
     return "Hey Bryan!";
   }
 
-  else if name !== "Bryan" || name !== "Steven"{
+  else if (name !== "Bryan" || name !== "Steven"){
     return "Cool name, " + name;
   }
 }
@@ -111,6 +111,7 @@ function add(num1, num2){
 //Now invoke add, passing in the numbers 3 and 4
 //storing the result in the variable mathSum.
 
+let mathSum = add(3, 4);
 console.log(add);
 
 //////////////////PROBLEM 12////////////////////
@@ -122,21 +123,21 @@ console.log(add);
 // If the passed in color equals 'black', return 'so trendy'
 // Otherwise, you should return the string 'you need to evaluate your favorite color choice'
 
-function favColorFinder(color){
-  if name === "red"{
+function faveColorFinder(color){
+  if (color === "red"){
     return "red is a great color";
   }
 
-  if name === "green"{
+  if (color === "green"){
     return "green is a solid favorite color";
   }
 
-  if name === "black"{
+  if (color === "black"){
     return "so trendy";
   }
 
   else {
-    return "you need to evaluate your facorite color choice";
+    return "you need to evaluate your favorite color choice";
   }
 }
 
